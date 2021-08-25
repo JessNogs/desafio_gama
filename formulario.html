@@ -46,7 +46,7 @@
        </div>
     
         <!-- Formulário -->
-        <div id="formulario" style="display:none;"> 
+        <form id="formulario" style="display:none;"> 
             <!-- colocar depois: style="display:none;" -->
 
             <h4>Formulário de preenchimento para candidatura</h4>
@@ -59,24 +59,18 @@
                 <div id="nome">
                 <label for = "nome"> Nome Completo </label>
                 <label for = "*" style="color:red">*</label>
-                <form >
-                    <input type="text" size="40px" placeholder="Seu nome completo" required="">
-                </form>
+                    <input type="text" size="35px" placeholder="Seu nome completo" required="">
             </div>
 
             <div id="profissao">
                 <label for = "profissao"> Profissão </label>
                 <label for = "*" style="color:red">*</label>
-                <form >
-                    <input type="text" size="40px" placeholder="Sua profissão atual" required="">
-                </form>
+                    <input type="text" size="35px" placeholder="Sua profissão atual" required="">
             </div>
 
             <div id="cargo">
                 <label for = "cargo"> Cargo Pretendido </label>
-                <form>
-                    <input type="text" size="40px" placeholder="Cargo que deseja">
-                </form>
+                    <input type="text" size="35px" placeholder="Cargo que deseja">
             </div>
 
             </div>
@@ -86,9 +80,9 @@
             <div id = data_estado_sexo>
 
                 <div id = "data">
-                <label for = "data"> Data de Nascimento </label>
+                <label for = "data"> Data de Nascimento </label> 
                 <label for ="*" style = "color:red">*</label>
-                <form>
+
                 <select name="dia" required="">
                     <option value="data1">1</option>
                     <option value="data1">2</option>
@@ -173,19 +167,15 @@
                     <option value="ano1">2002</option>
                     <option value="ano1">2003</option>
                 </select>
-            </form>
         </div>
 
             <div id="estado_civil">
                 <label for="estado_civil">Estado Civil</label>
-                <form>
-                    <input type="text" size="60px" placeholder="Informe seu Estado Civil">
-                </form>
+                    <input type="text" size="20px" placeholder="Informe seu Estado Civil">
             </div>
 
             <div id="sexo">
                 <label for="sexo">Sexo</label>
-                <form>
                     <select>
                         <option value="sexo">-</option>
                         <option value="sexo">Mulher Cisgênero</option>
@@ -194,7 +184,6 @@
                         <option value="sexo">Homem Transgênero</option>
                         <option value="sexo">Prefiro não declarar</option>
                     </select>
-                </form>
             </div>
 
              </div>
@@ -205,17 +194,13 @@
              <div id="cep">
                 <label for="cep">CEP</label>
                 <label for="*" style="color:red">*</label>
-                <form>
                     <input id="input_cep" type="text" size="40px" placeholder="Informe um CEP válido" required="">
-                </form>
             </div>
 
             <div id="estado">
                 <label for="estado">Estado</label>
                 <label for="*" style="color:red">*</label>
-                <form>
                     <input id="uf" type="text" size="30px" placeholder="Informe o Estado" required="">
-                </form>
             </div>
         </div>
 
@@ -225,17 +210,13 @@
              <div id="rua">
                  <label for="rua">Endereço</label>
                  <label for="*" style="color:red">*</label>
-                 <form>
-                     <input id="rua" type="text" size="100px" placeholder="ex. Rua Bonita" required="">
-                 </form>
+                     <input id="rua" type="text" size="60px" placeholder="ex. Rua Bonita" required="">
              </div>
 
              <div id="numero">
                 <label for="numero">Número</label>
                 <label for="*" style="color:red">*</label>
-                <form>
                     <input id="numero" type="text" size="30px" placeholder="Nº casa ou apto" required="">
-                </form>
             </div>
         </div>
 
@@ -244,17 +225,13 @@
                  <div id="bairro">
                 <label for ="bairro">Bairro</label>
                 <label for="*" style="color:red">*</label>
-                <form>
                     <input id="bairro" type="text" size="55px" placeholder="Informe seu bairro" required="">
-                </form>
                  </div>
 
                  <div id="cidade">
                      <label for="cidade">Cidade</label>
                      <label for="*" style="color:red">*</label>
-                     <form>
                          <input id="cidade" type="text" size="55px" placeholder="Informe sua cidade" required="">
-                     </form>
                  </div>
              </div>
 
@@ -263,16 +240,12 @@
 
                 <div id="tel_1">
                     <label for="tel_1">Telefone Fixo 1</label>
-                    <form>
                         <input type="text" size="30px" placeholder="Telefone fixo principal">
-                    </form>
                 </div>
 
                 <div id="tel_2">
                     <label for="tel_2">Telefone Fixo 2</label>
-                    <form>
                         <input type="text" size="30px" placeholder="Telefone fixo opcional">
-                    </form>
              </div>
              </div>
 
@@ -282,24 +255,18 @@
                 <div id="cel">
                     <label for = "cel">Celular</label>
                     <label for="*" style="color:red">*</label>
-                    <form>
                         <input type = "text" size="30px" placeholder="ex. (99)99999-9999" required="">
-                    </form>
                 </div>
 
                 <div id="contato">
                     <label for = "contato">Contato</label>
-                    <form>
                         <input type = "text" size="45px" placeholder="Nome">
-                    </form>
                 </div>
 
                 <div id="email">
                     <label for = "email">E-mail</label>
                     <label for="*" style="color:red">*</label>
-                    <form>
                         <input type = "text" size="30px" placeholder="seunome@exemplo.com" required="">
-                    </form>
                 </div>
              </div>
 
@@ -311,33 +278,26 @@
                 <div id="id">
                     <label for = "id">Identidade</label>
                     <label for="*" style="color:red">*</label>
-                    <form>
                         <input type = "text" size="35px" required="">
-                    </form>
                 </div>
 
                 <div id="cpf">
                     <label for = "cpf">CPF</label>
                     <label for="*" style="color:red">*</label>
-                    <form>
                         <input type = "text" size="35px" required="">
-                    </form>
                 </div>
 
                 <div id="veiculo">
                     <label for = "id">Possui veículo próprio?</label>
-                    <form>
                         <select>
                             <option value="nenhum">-</option>
                             <option value="sim">Sim</option>
                             <option value="nao">Não</option>
                         </select>
-                    </form>
                 </div>
 
                 <div id="habilitacao">
                     <label for = "habilitacao">Habilitação</label>
-                    <form>
                         <select>
                             <option value="nenhum">-</option>
                             <option value="sim">CNH A</option>
@@ -346,7 +306,7 @@
                             <option value="nao">CNH D</option>
                             <option value="nao">CNH E</option>
                         </select>
-                    </form>
+                    
                 </div>
 
             </div>
@@ -355,8 +315,8 @@
                 <button id='enviar' type="submit" > Enviar! </button>
             </div>
 
+    </form>
 
-    </div>
 
     <script>
         function displayFormulario() {
