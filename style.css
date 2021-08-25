@@ -149,10 +149,17 @@ body{
 }
 
 /* LINHA 3 */
-#endereco form{
-    width: 300px;
+#cep_estado {
     margin-bottom: 20px;
-    /* arrumar o espaço do formulario */
+    display:flex;
+    justify-content:space-between;
+
+}
+
+#logradouro {
+    display:flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
 }
 
 /* LINHA 4 */
@@ -191,3 +198,26 @@ body{
     justify-content:space-between;
 }
 
+/* BUTÃO */
+#enviar {
+    width: 150px;
+    padding: 5px 10px;
+    cursor:pointer;
+    border-radius: 5px 5px 5px 5px;
+    background-color: #696969;
+    font-size: larger;
+    transition: 300ms;
+
+}
+
+#enviar:hover{
+    background-color: orange;
+    color: #fff
+}
+
+.butao{
+    display:flex;
+    justify-content: center;
+    margin-top:30px;
+
+}

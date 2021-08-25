@@ -24,7 +24,7 @@
         <div id="inicial">
 
         <h2>Banco de Talentos</h2>
-        <img src="logo.png" alt="logo">
+        <img src="./logo.png" alt="logo">
         <P>JobsNet</P>       
         
         </div>
@@ -200,13 +200,44 @@
              </div>
 
              <!-- Linha 3 -->
-             <div id="endereco">
-                 <label for="endereco">Endereço</label>
+             <div id="cep_estado">
+
+             <div id="cep">
+                <label for="cep">CEP</label>
+                <label for="*" style="color:red">*</label>
+                <form>
+                    <input id="input_cep" type="text" size="40px" placeholder="Informe um CEP válido" required="">
+                </form>
+            </div>
+
+            <div id="estado">
+                <label for="estado">Estado</label>
+                <label for="*" style="color:red">*</label>
+                <form>
+                    <input id="uf" type="text" size="30px" placeholder="Informe o Estado" required="">
+                </form>
+            </div>
+        </div>
+
+             <!-- Linha 4 -->
+             <div id="logradouro">
+
+             <div id="rua">
+                 <label for="rua">Endereço</label>
                  <label for="*" style="color:red">*</label>
                  <form>
-                     <input type="text" size="100px" placeholder="ex. Rua Bonita, 123. Bloco C, apto 105" required="">
+                     <input id="rua" type="text" size="100px" placeholder="ex. Rua Bonita" required="">
                  </form>
              </div>
+
+             <div id="numero">
+                <label for="numero">Número</label>
+                <label for="*" style="color:red">*</label>
+                <form>
+                    <input id="numero" type="text" size="30px" placeholder="Nº casa ou apto" required="">
+                </form>
+            </div>
+        </div>
 
              <!-- Linha 4 -->
              <div id="bairro_cidade">
@@ -214,7 +245,7 @@
                 <label for ="bairro">Bairro</label>
                 <label for="*" style="color:red">*</label>
                 <form>
-                    <input type="text" size="55px" placeholder="Informe seu bairro" required="">
+                    <input id="bairro" type="text" size="55px" placeholder="Informe seu bairro" required="">
                 </form>
                  </div>
 
@@ -222,21 +253,13 @@
                      <label for="cidade">Cidade</label>
                      <label for="*" style="color:red">*</label>
                      <form>
-                         <input type="text" size="55px" placeholder="Informe sua cidade" required="">
+                         <input id="cidade" type="text" size="55px" placeholder="Informe sua cidade" required="">
                      </form>
                  </div>
              </div>
 
              <!-- Linha 5 -->
              <div id="cep_tel">
-
-                <div id="cep">
-                    <label for="cep">CEP</label>
-                    <label for="*" style="color:red">*</label>
-                    <form>
-                        <input type="text" size="40px" placeholder="Informe um CEP válido" required="">
-                    </form>
-                </div>
 
                 <div id="tel_1">
                     <label for="tel_1">Telefone Fixo 1</label>
@@ -328,6 +351,10 @@
 
             </div>
 
+            <div class='butao'>
+                <button id='enviar' type="submit" > Enviar! </button>
+            </div>
+
 
     </div>
 
@@ -337,5 +364,7 @@
             display.classList.toggle('active');
         }
     </script>
+    <script src="./cep.js" type="module" defer></script>
+
 
     </body>
