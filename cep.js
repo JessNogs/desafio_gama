@@ -16,34 +16,18 @@ const preencherFormulario = (endereco) => {
 }
 
 
-const eNumero = (numero) => /^[0-9]+$/.test(numero);
-
-const cepValido = (cep) => cep.lenght == 8 && eNumero(cep); 
-
 const pesquisarCEP = async() => {
 
     limparFormulario();
 
-    const cep = document.getElementById('input_cep').value;
-    const url = ` http://viacep.com.br/ws/${cep}/json/`;
-
-    if(cepValido(cep)){
+    const cep = document.getElementById('cep').value;
+    const url = `http://viacep.com.br/ws/${cep}/json/`;
 
     const dados = await fetch(url);
-    const endereco = await dados.jason();
+    const endereco = await dados.json();
 
-    if(endereco.hasOwnProperty('erro')){
-        document.getElementById('rua').value = 'CEP não encontrado!';
-    }
-        else {
-            preencherFormulario (endereco);
-        }
+    preencherFormulario (endereco);
 
-    }
-    else {
-        document.getElementById('rua').value = 'CEP inválido!';
-    }
-       
 }
 
-document.getElementById('input_cep').addEventListener('focusout', pesquisarCEP);
+document.getElementById('cep').addEventListener('focusout', pesquisarCEP);

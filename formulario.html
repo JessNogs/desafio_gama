@@ -191,10 +191,10 @@
              <!-- Linha 3 -->
              <div id="cep_estado">
 
-             <div id="cep">
-                <label for="cep">CEP</label>
+             <div>
+                <label>CEP</label>
                 <label for="*" style="color:red">*</label>
-                    <input id="input_cep" type="text" size="40px" placeholder="Informe um CEP válido" required="">
+                    <input id="cep" type="text" size="40px" placeholder="Informe um CEP válido" required="">
             </div>
 
             <div id="estado">
@@ -207,13 +207,13 @@
              <!-- Linha 4 -->
              <div id="logradouro">
 
-             <div id="rua">
-                 <label for="rua">Endereço</label>
+             <div>
+                 <label>Endereço</label>
                  <label for="*" style="color:red">*</label>
                      <input id="rua" type="text" size="60px" placeholder="ex. Rua Bonita" required="">
              </div>
 
-             <div id="numero">
+             <div>
                 <label for="numero">Número</label>
                 <label for="*" style="color:red">*</label>
                     <input id="numero" type="text" size="30px" placeholder="Nº casa ou apto" required="">
@@ -222,14 +222,14 @@
 
              <!-- Linha 4 -->
              <div id="bairro_cidade">
-                 <div id="bairro">
-                <label for ="bairro">Bairro</label>
+                 <div>
+                <label for ="bairro_cidade">Bairro</label>
                 <label for="*" style="color:red">*</label>
                     <input id="bairro" type="text" size="55px" placeholder="Informe seu bairro" required="">
                  </div>
 
-                 <div id="cidade">
-                     <label for="cidade">Cidade</label>
+                 <div >
+                     <label>Cidade</label>
                      <label for="*" style="color:red">*</label>
                          <input id="cidade" type="text" size="55px" placeholder="Informe sua cidade" required="">
                  </div>
@@ -324,7 +324,7 @@
             display.classList.toggle('active');
         }
     </script>
-    <script src="./cep.js" type="module" defer></script>
+    <script src= './cep.js'></script>
 
 
     </body>
